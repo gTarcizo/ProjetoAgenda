@@ -1,0 +1,73 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+
+<div class="container">
+<div class="row">
+<div class="col-lg-2"></div>
+
+<div class="col-lg-8 my-3">
+<h1 class="text-center" >Sign In / Login</h1>
+<p class="text-center lead">Faça Login ou Crie Sua Conta Abaixo:</p>
+
+<div class="row">
+  <div class="col-lg">
+    <br>
+    <h2>Cadastrar-se</h2>
+    <br>
+    <p class="form-text text-muted">Se você não tem uma conta, Cadastrar-se!</p>
+
+<!-- FORM DE CADASTRE-SE -->
+
+    <form action="/login/register" method="post">
+<!--  <input type="hidden" name="_csrf" value=<%= csrfToken %>> -->
+      <div class="form-group">
+        <label for="exampleInputEmail1">Endereço de Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu Email" name="email">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Ciar Conta!</button>
+    </form>
+  </div>
+
+
+  
+  <div class="col-lg">
+    <br>
+    <h2>Login</h2>
+    <br>
+    <p class="form-text text-muted">Se você já tem uma conta, Faça seu Login!</p>
+ 
+  <!-- FORM DE LOGIN-->
+  <form action="/login/login" method="post">
+<!-- <input type="hidden" name="_csrf" value=<%= csrfToken %>> -->
+      <div class="form-group">
+        <label for="exampleInputEmail1">Endereço de Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu Email" name="email">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Entrar!</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+</div>
+
+<div class="col-lg-2"></div>
+
+</div>
+</div>
+
+<%- include('includes/footer') %>

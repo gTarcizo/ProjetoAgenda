@@ -1,14 +1,13 @@
 const express = require('express');
 const route = express.Router();
 const homeController = require('./src/controllers/homeController');
-const contatoController = require('./src/controllers/contatoController');
+const loginController = require('./src/controllers/loginController');
 
 // Rotas da home
-route.get('/', homeController.paginaInicial);
-route.post('/', homeController.trataPost);
-
-// Rotas de contato
-route.get('/404', contatoController.paginaInicial);
-
-
+route.get('/', homeController.index); //td que foir a raiz da rota chama de index
+//rotas de login
+/* 
+ login.index
+  */
+route.get('/login', loginController.index)
 module.exports = route;
