@@ -8,7 +8,7 @@ route.get('/', homeController.paginaInicial);
 route.post('/', homeController.trataPost);
 
 // Rotas de contato
-route.get('/contato', contatoController.paginaInicial);
+route.get('/404', contatoController.paginaInicial);
 
 
 module.exports = route;
