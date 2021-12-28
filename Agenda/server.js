@@ -20,8 +20,8 @@ mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifi
   
   app.use( express.static( "public" ) );
   app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-//app.use(express.static(path.resolve(__dirname, 'public')));
+  app.use(express.json());
+  app.use(express.static(path.resolve(__dirname, 'public')));
 
 const sessionOptions = session({
   secret: 'akasdfj0út23453456+54qt23qv  qwf qwer qwer qewr asdasdasda a6()',
