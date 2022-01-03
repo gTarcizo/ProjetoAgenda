@@ -19,7 +19,7 @@
 <!-- FORM DE CADASTRE-SE -->
 
     <form action="/login/register" method="post">
-<!--  <input type="hidden" name="_csrf" value=<%= csrfToken %>> -->
+  <input type="hidden" name="_csrf" value=<%= csrfToken %>> 
       <div class="form-group">
         <label for="exampleInputEmail1">Endereço de Email</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu Email" name="email">
@@ -27,7 +27,7 @@
       <br>
       <div class="form-group">
         <label for="exampleInputPassword1">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="">
       </div>
       <br>
       <button type="submit" class="btn btn-primary">Criar Conta!</button>
@@ -44,7 +44,7 @@
  
   <!-- FORM DE LOGIN-->
   <form action="/login/login" method="post">
-<!-- <input type="hidden" name="_csrf" value=<%= csrfToken %>> -->
+<input type="hidden" name="_csrf" value=<%= csrfToken %>> <!-- CSRF TOKEN-->
       <div class="form-group">
         <label for="exampleInputEmail1">Endereço de Email</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu Email" name="email">

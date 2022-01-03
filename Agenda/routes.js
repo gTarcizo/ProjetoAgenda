@@ -10,4 +10,5 @@ route.get('/', homeController.index); //td que foir a raiz da rota chama de inde
  login.index
   */
 route.get('/login', loginController.index)
+route.post('/login/register', loginController.register)
 module.exports = route;
