@@ -40,7 +40,8 @@ app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
 
 app.use(csrf());
-// Nossos próprios middlewares
+
+//middlewares
 app.use(middlewareGlobal);
 app.use(checkCsrfError);
 app.use(csrfMiddleware);
